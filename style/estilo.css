@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+html {
+    font-size: 62.5%;
+    --tam-header: 5rem;
+    --tam-footer: 5rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #162028;
+    height: var(--tam-header);
+    max-height: var(--tam-header);
+}
+
+.header-title {
+    margin: auto 15rem;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+}
+
+.header nav {
+    margin: auto 2rem auto 0;
+    padding: 0;
+    width: 40%;
+}
+
+.header-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-list__item {
+    color: #425564;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: .5rem;
+}
+
+.header-list__item:hover {
+    color: white;
+    cursor: default;
+}
+
+.main {
+    background-color: grey;
+    min-height: calc(90vh - var(--tam-header));
+    height: calc(100vh - var(--tam-header));
+    width: 100%;
+    display: inline-block;
+}
+
+.main-image {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.content1 {
+    margin: 3rem auto;
+    width: 70vw;
+    height: fit-content;
+    padding: 1rem;
+}
+
+.content1-subtitle {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.content1-text {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: .1rem;
+    line-height: 1.8;
+    margin-top: 4rem;
+}
+
+.cards {
+    display: flex;
+    width: 70vw;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 0;
+    gap: 1.5rem;
+}
+
+.cards-content {
+    width: 100%;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.cards-content h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 2rem 0 0;
+}
+
+.cards-content p {
+    font-size: 1.6rem;
+}
+
+.cards-content__image {
+    width: 100%;
+}
+
+.content2 {
+    margin: 8rem 0 0;
+    background-image: url(/imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    height: calc(100vh - var(--tam-footer));
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content2-div {
+    width: 80vw;
+    height: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+.content2-div h2 {
+    font-size: 5rem;
+}
+
+.content2 p {
+    font-size: 1.8rem;
+    width: 60%;
+    line-height: 1.5;
+    height: fit-content;
+}
+
+footer {
+    height: var(--tam-footer);
+    background-color: black;
+    display: inline-block;
+    width: 100%;
+    background-color: #0b171f;
+    /* opacity: .7; */
+    color: #6f8597;
+    font-size: 1.6rem;
+    text-align: center;
+    letter-spacing: 1.5;
+}
